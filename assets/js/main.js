@@ -178,6 +178,15 @@
   /**
    * Testimonials slider
    */
+
+   var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
   new Swiper('.testimonials-slider', {
     speed: 600,
     loop: true,
@@ -192,6 +201,17 @@
       clickable: true
     }
   });
+
+  // new Swiper('.testimonials-slider2', {
+  //   speed: 600,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+ 
+  // });
 
   function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
